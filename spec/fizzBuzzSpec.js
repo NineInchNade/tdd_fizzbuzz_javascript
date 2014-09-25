@@ -16,5 +16,9 @@ describe("FizzBuzz", function() {
   it("divides by five", function() {
         expect(fizzBuzz.divisibleByFive(5)).toEqual(true);
   });
+  
+  it("recognizes if a number is not divisible by five", function() {
+        expect(fizzBuzz.divisibleByFive(1)).toEqual(false);
+  });
 
 });
