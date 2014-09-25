@@ -6,7 +6,7 @@ describe("FizzBuzz", function() {
   });
 
   it("divides by three", function() {
-      	expect(fizzBuzz.divBy3(3)).toEqual(true);
+      	expect(fizzBuzz.divisibleByThree(3)).toEqual(true);
   });
 
 });
