@@ -14,11 +14,15 @@ FizzBuzz.prototype.divisibleBy15 = function(num) {
 
 FizzBuzz.prototype.playGame = function(num) {
 	
-	if (this.divisibleByThree(num)) {
+	if (this.divisibleBy15(num)) {
+		return "FizzBuzz";
+	} else if (this.divisibleByThree(num)) {
 		return "Fizz"; 
 	} else if (this.divisibleByFive(num)) {
 		return "Buzz";
-	} 
+	} else {
+		return num;
+	}
 
 };
 

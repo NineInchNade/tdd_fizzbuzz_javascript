@@ -7,6 +7,7 @@ describe("FizzBuzz", function() {
   });
 
   describe("It knows ", function() {
+
   it("if a number is divisible by three", function() {
       	expect(fizzBuzz.divisibleByThree(3)).toEqual(true);
   });
@@ -33,6 +34,7 @@ describe("FizzBuzz", function() {
  });
 
   describe("the game returns", function() {
+
   it("\"Fizz\" on play if number is divisible by 3", function() {
         expect(fizzBuzz.playGame(3)).toEqual("Fizz");
   });
@@ -40,6 +42,15 @@ describe("FizzBuzz", function() {
   it("\"Buzz\" on play if number is divisible by 5", function() {
         expect(fizzBuzz.playGame(5)).toEqual("Buzz");
   });
+
+  it("\"FizzBuzz\" on play if the number is divisible by 15", function() {
+        expect(fizzBuzz.playGame(15)).toEqual("FizzBuzz");
+  });
+
+  it("the number if it is neither divisible by 3 nor 5", function() {
+        expect(fizzBuzz.playGame(1)).toEqual(1);
+  });
+
 });
 
 });
