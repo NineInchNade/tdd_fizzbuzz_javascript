@@ -5,7 +5,7 @@ This is the good old FizzBuzz.
 
 Technology used: 
 
-JavaScript
+JavaScript /br
 Jasmine (JavaScript testing framework) 
 
 The rules of FizzBuzz are the following :
